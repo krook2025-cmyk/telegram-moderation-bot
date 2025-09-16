@@ -1,1 +1,13 @@
-https://telegram-moderation-bot-7jdm.onrender.com/
+{
+  "type": "service_account",
+  "project_id": "liquid-virtue-472323-k5",
+  "private_key_id": "96e7371fb90a5f6c2f186168a61d06e466e3970b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCgPricJ1IZk/Oy\n5MWfTm5pSGI6FKfr+BhenTSu1iLIfn0+eyZ+28wmI8rn8aNno86rtqQR/PZwXn3N\nOIZ48kMUBgeH0BTL0aHh4N63FZUrE/CPqCrAxvchViAmwnuqMCe/2WEHe5jqCy2q\nEjl825es/RG0FU1lBp2sfHhn2hi+rcpin3ILOVfjt3B4GeoGtn6T8+tqmthDWzdu\nbQaWA71ctox6P8mPQ+qNlTDbgIPwss0uWNoqPkdDfLchEDMvUDVYzClizQ7fh8NJ\n8AUSsWCUoRtmLZVnhk2WXalyRqub9gUN0q3gMKOHdIo+FJmmxh+/RQBPpqGhS2GS\nQDZvvKlDAgMBAAECggEAHrVGTW5fllU6+0pJ8Mhn8jcT08uHjnnBucfog6S3j7Jl\nr+aLrv3R9nEffilZRhAnF9LtSCEw3MHO29f8NQs//YNWSBmBErn+irm8FFvHdTTi\nAbWZU84NJ89IZAUbC7cktugiZvuxhxBTVOcfKyUtwNHSZa87YKPO7XIA5O3vlgKL\n+31daZf3zIjchJaPdnEiD70QorL0OUSDI/YsjRjO5mSWm89U/Cy7Y7Nbn17KXef\nmKlpwgIIwwL7SdfiBqLzc4pkrgwHjXwX2fsu9lJIvDNhsc6ycz5VelUtKWs1bWqD\nTBC6cXDac3eIMsSP0GJPw8PidOE/0ksKkAeF6zJHiQKBgQDdK3EWWyz3A6IXiYuH\nrVCz8EajYELcgZilj4/lU4J4cU43em99j/XNwftbl4OYIlNLKR72tKfWn4Q66Jij\nOR2QF1IFkub+LzEaogcA07PKLEXEmiIrZvATpYShbJ2i6mUO/EYBQUpR9JVSuW/D\n0dXsVYcsOg73O71X0NcC/DmJVwKBgQC5exKJSX1gzc5ZflJKxvTGqgwOQzvTfBxm\n/ZWT2z0trqr3s9oBH7w1QCkxRaQODU1dcjKaWr8XCE4M3hTywFgmYIZYZK+WZV/I\nrWSLIrvO0fFDkj+h0HcQsNmH5dqhf4Z4Kp79LIpj1MCwU6VqH/0kOb6uGAD0Nzms\nLA6jCazv9QKBgGJgc2HtVlfdbtknXkAQcIhJRTJgm/z3TE3ASNJJzgwC4ja9KCBi\ny4QlV8gK4gbmpcQV22cDPnCx7aBCW7qmqiawqNQ/3q2Lkjz1e0X75Mn13Waw5KgH\nlpw2kIM5C/kuZ5s9zWm7f/JqZ40vXK5uhMgl1wVuIcAI+5S3GRyD0pfrAoGBAIXb\nxT/hEqQHQ3Gg0cD3nvW1CShN62IwQsstHYLsiVVrpiVH3gBLp+eCW3gcu04M2ZWj\n8dMlxJzZuIJe0B11JOjlZm9qkrHmjV7ljBdBxOp45zaN2HBuY09fYk5KWyOMRj54\n++7Y8zMi+sEGTO2vEmDPb8ZyulWFeZDA5vtQ40b1AoGAWFdEJq25pzidfzjgP/uC\nEcEDXvlTDlqcCtWYpzoPfzShMBb/9rz3lmgduOGw2IgySI5gN7ogfR+vhQKrOkj+\n3Rgw4dTwti5h0KYaViKuari7qmeoaLCH4Og6gK2HazmcUUSCbDnqxzRNfINF5due\nJZbaV0LuocC8UytuhjX9+q4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "telegrambotservice@liquid-virtue-472323-k5.iam.gserviceaccount.com",
+  "client_id": "103019173089860388350",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/telegrambotservice%40liquid-virtue-472323-k5.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
