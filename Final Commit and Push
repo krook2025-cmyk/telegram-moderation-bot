@@ -1,0 +1,3 @@
+git add .
+git commit -m "Add render configuration and final touches"
+git push origin main
