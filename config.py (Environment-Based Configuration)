@@ -1,0 +1,58 @@
+import os
+import json
+from dotenv import load_dotenv
+
+# Load environment variables from .env file if it exists
+load_dotenv()
+
+# Bot configuration
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '8289869796:AAEyNWi1ApCl7IPd_ERxJJ2eziYqVT7NdkQ')
+SHEET_ID = os.environ.get('SHEET_ID', '1zmzf3lsQndZpIjPcc00CobpXoclW4hQNGzqrIvvE9vU')
+DOC_ID = os.environ.get('DOC_ID', '1to39YjgE7MgD1zsds-2RQC-ih-Hl4dvsWAakdByg6UQ')
+
+# Google Sheets credentials - load from environment variable or file
+GOOGLE_CREDENTIALS = None
+
+# Try to load from environment variable first
+google_credentials_json = os.environ.get('GOOGLE_CREDENTIALS_JSON')
+if google_credentials_json:
+    try:
+        GOOGLE_CREDENTIALS = json.loads(google_credentials_json)
+    except json.JSONDecodeError:
+        print("Error: GOOGLE_CREDENTIALS_JSON is not valid JSON")
+
+# If not in environment, try to load from file
+if not GOOGLE_CREDENTIALS and os.path.exists('credentials.json'):
+    try:
+        with open('credentials.json', 'r') as f:
+            GOOGLE_CREDENTIALS = json.load(f)
+    except Exception as e:
+        print(f"Error loading credentials.json: {e}")
+
+# Knowledge base
+KNOWLEDGE_BASE = {}
+try:
+    if os.path.exists('knowledge_base.json'):
+        with open('knowledge_base.json', 'r') as f:
+            KNOWLEDGE_BASE = json.load(f)
+    else:
+        # Default knowledge base
+        KNOWLEDGE_BASE = {
+            "welcome_message": "Welcome to our group! Please read the rules and enjoy your stay.",
+            "rules": "1. Be respectful to all members\n2. No spam or advertisements\n3. No inappropriate content\n4. Keep discussions relevant to the group topic",
+            "faq": "Frequently asked questions will be answered here. Please ask the admin to add more FAQs.",
+            "contact": "Please contact the group admin for any questions or concerns."
+        }
+except Exception as e:
+    print(f"Error loading knowledge base: {e}")
+    KNOWLEDGE_BASE = {}
+
+# Inappropriate words list
+INAPPROPRIATE_WORDS = {
+    'fuck', 'shit', 'bitch', 'asshole', 'bastard', 'damn', 'crap', 'dick', 'pussy', 'cock',
+    'prick', 'porn', 'slut', 'whore', 'sex', 'nude', 'xxx', 'milf', 'fetish', 'suck',
+    'blowjob', 'cum', 'anal', 'dildo', 'racist', 'nigger', 'fag', 'chink', 'spic', 'terrorist',
+    'nazi', 'kkk', 'coon', 'gaylord', 'queer', 'idiot', 'stupid', 'moron', 'dumbass', 'loser',
+    'ugly', 'fatso', 'psycho', 'freak', 'retard', 'scam', 'fraud', 'hack', 'cheat', 'giveaway',
+    'free money', 'click here', 'investment scheme', 'airdrop', 'pump and dump'
+}
