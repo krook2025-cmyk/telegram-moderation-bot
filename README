@@ -1,0 +1,18 @@
+# Telegram Moderation Bot
+
+A bot that moderates Telegram groups with welcome messages, content filtering, and Google Sheets logging.
+
+## Setup
+
+1. Clone this repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Copy `credentials.json.template` to `credentials.json` and add your Google credentials
+4. Set environment variables:
+   - BOT_TOKEN: Your Telegram bot token
+   - SHEET_ID: Your Google Sheet ID
+   - DOC_ID: Your Google Doc ID
+5. Run the bot: `python bot.py`
+
+## Deployment
+
+This bot can be deployed on Render.com. Use the provided render.yaml file for easy setup.
